@@ -373,7 +373,7 @@ interface ICreateOptions {
     /** Specifies indexing directives. */
     indexAction?: string;
     /** Disables automatic generation of "id" field of the document to be created (if it is not provided) */
-    disableAutomaticIdGeneration?: string;
+    disableAutomaticIdGeneration?: boolean;
 }
 
 /** Options associated with a delete operation. */
@@ -586,7 +586,7 @@ interface IUpsertOptions {
     /** Specifies indexing directives. */
     indexAction?: string;
     /** Disables automatic generation of "id" field of the document to be upserted (if it is not provided) */
-    disableAutomaticIdGeneration?: string;
+    disableAutomaticIdGeneration?: boolean;
 }
 
 /** List of error codes returned by database operations in the RequestCallback and FeedCallback. See the corresponding error message for more details. */
